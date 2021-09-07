@@ -1,3 +1,103 @@
-﻿body
-{
+﻿$red: #e2536b;
+$mainGreen: #32a277;
+
+@mixin button {
+    width: 40%;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 13px 0;
+    border: 3px solid $red;
+    color: $red;
+    border-radius: 6px;
+}
+@mixin buttonHover {
+    background-color: $mainGreen;
+    border: none;
+    color: white;
+}
+
+#greySection {
+    background-color: #f5f7fa;
+    width: 100%;
+    #header {
+        text-align: center;
+        
+        h1 {
+            padding-top: 20px;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    }
+
+    #stepsContainer {
+        margin-bottom: 70px;
+        padding: 0 20px;
+
+        .step {
+            padding: 0 30px;
+            text-align: center;
+            color: #929cb1;
+            
+            .circle {
+                background-color: transparent;
+                border-radius: 50%;
+                box-shadow: 0 3px 6px grey;
+                width: 20%;
+                text-align: center;
+                margin: auto;
+                
+                p {
+                    color: $red;
+                    line-height: 60px;
+                    font-size: 24px;
+                    font-weight: 800;
+                  }
+
+            }
+        }
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+    .chooseContainer {
+        .choiceDiv {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        button {
+            @include button;
+            
+            &:hover {
+                background-color: $mainGreen;
+                border: none;
+                color: white;
+            }
+        }
+    }
+
+    #note {
+        margin-bottom: 40px;
+        p {
+            color: #929cb1;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+
+    #support {
+        text-align: center; 
+        margin-bottom: 40px;
+
+        button{
+            width: 120px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 10px 0;
+            @include buttonHover;
+        }
+    }
+
 }

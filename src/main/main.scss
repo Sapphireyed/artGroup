@@ -8,16 +8,23 @@ $mainGreen: #32a277;
 
 .mainSect {
     padding: 10px;
+    margin-bottom: 50px;
 
     .main-container {
         padding: 0 5%;
     }
 
-    .mainSubSect{
+    .mainSubSect {
         margin: 0
     }
+
     p:first-child {
-        font-style: italic
+        font-style: italic;
+        color: #929cb1;
+    }
+
+    p:nth-child(2) {
+        font-size: 20px;
     }
 
     #imgContainer {
@@ -43,6 +50,7 @@ $mainGreen: #32a277;
         border-radius: 10px;
         margin-top: 1em;
         z-index: 1;
+        box-shadow: -4px 4px 8px lightgrey
     }
 }
 
