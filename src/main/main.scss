@@ -1,0 +1,53 @@
+﻿@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+
+@import "/node_modules/bootstrap/scss/grid";
+
+$mainGreen: #32a277;
+
+.mainSect {
+    padding: 10px;
+
+    .main-container {
+        padding: 0 5%;
+    }
+
+    .mainSubSect{
+        margin: 0
+    }
+    p:first-child {
+        font-style: italic
+    }
+
+    #imgContainer {
+        position: relative;
+    }
+
+    #circle::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $mainGreen;
+        width: 80%;
+        height: 112%;
+        top: -15%;
+        left: 19%;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 1em;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-container {
+        padding: 0 10px;
+    }
+}
