@@ -16,16 +16,13 @@
         vertical-align: bottom;
         display: table-cell;
         text-align: center;
-        color: #e5e3e2;
         padding: 0 10px;
-
-        div {
-
-        }
+        overflow: hidden;
 
         h3, p {
             margin-bottom: 10px;
-            text-shadow: 1px 1px 40px black, -1px 1px 40px black, 1px -1px 40px black, -1px -1px 40px black,
+            text-shadow: 1px 1px 40px black, -1px 1px 40px black, 1px -1px 40px black, -1px -1px 40px black;
+            color: #fff
         }
 
     }
