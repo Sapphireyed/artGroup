@@ -12,6 +12,7 @@ $mainGreen: #32a277;
 
     .main-container {
         padding: 0 5%;
+        margin: auto auto
     }
 
     .mainSubSect {
@@ -36,7 +37,7 @@ $mainGreen: #32a277;
         display: block;
         position: absolute;
         background: $mainGreen;
-        width: 80%;
+        width: 70%;
         height: 112%;
         top: -15%;
         left: 19%;
@@ -45,7 +46,7 @@ $mainGreen: #32a277;
     }
 
     img {
-        width: 80%;
+        width: 70%;
         height: auto;
         border-radius: 10px;
         margin-top: 1em;

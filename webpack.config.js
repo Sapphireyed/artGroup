@@ -8,8 +8,8 @@ module.exports = {
 
     output: {
         filename: '[name].[contenthash]bundle.js',
-        path: path.resolve(__dirname, 'deploy'),
-        //  path: '/artgroup/',
+        //path: path.resolve(__dirname, 'deploy'),
+          path: '/artGroup/',
     },
 
     devServer: {
