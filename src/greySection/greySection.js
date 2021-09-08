@@ -1,5 +1,7 @@
 ﻿import './greySection.scss'
 
+import gallerySection from '../gallery/gallery.js'
+
 const greySection = document.createElement('section')
 greySection.id = 'greySection'
 
@@ -56,6 +58,6 @@ let support = document.createElement('div')
 support.id = 'support'
 support.innerHTML = '<button class="choiceBtn">Wspieram</button'
 
-greySection.append(header, stepsContainer, chooseHeader, chooseContainer, note, support)
+greySection.append(header, stepsContainer, chooseHeader, chooseContainer, note, support, gallerySection)
 
 export default greySection

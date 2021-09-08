@@ -1,0 +1,63 @@
+﻿$mainGreen: #32a277;
+
+.carousel {
+    padding: 0 40px;
+    position: relative;
+    padding-bottom: 70px;
+
+    .galleryCol {
+        padding: 10px;
+        margin: 0 10px;
+     }
+
+    .img {
+        height: 450px;
+        background-position: center;
+        vertical-align: bottom;
+        display: table-cell;
+        text-align: center;
+        color: #e5e3e2;
+        padding: 0 10px;
+
+        div {
+
+        }
+
+        h3, p {
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 40px black, -1px 1px 40px black, 1px -1px 40px black, -1px -1px 40px black,
+        }
+
+    }
+}
+
+.controls {
+    transform: scaleY(2.3);
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+
+    button {
+        font-size: 32px;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+           color: $mainGreen
+                }
+    }
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px
+}
+
+@media only screen and (max-width: 1000px) {
+    .img {
+        height: 350px;
+    }
+}
